@@ -1,0 +1,13 @@
+fernetKey: SDBRNFZjUVFaZFRnVWZ5bHFhZnAxaFNHYXZ0ZFNXYkc=
+webserverSecretKey: SDBRNFZjUVFaZFRnVWZ5bHFhZnAxaFNHYXZ0ZFNXYkc=
+executor: "KubernetesExecutor"
+
+dags:
+  gitSync:
+    enabled: true
+    repo: https://github.com/edwardho/KubernetesDataEngineering.git
+    branch: main
+    rev: HEAD
+    depth: 1
+    maxFailures: 0
+    subPath: "DAGs"
